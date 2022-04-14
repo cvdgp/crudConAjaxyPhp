@@ -1,0 +1,44 @@
+body{
+
+	background: #333;
+	color: ghostwhite;
+}
+header{
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(81,19,120,1) 35%, rgba(82,50,93,1) 100%);
+
+	margin:  5px 20px;
+	padding: 1em;
+}
+header h1{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	color: #cf8d2e;
+	font-size: 3em;
+}
+.form{
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+
+	margin: 1.2em auto;
+	padding: 1em;
+	width:  50%;
+	border: 5px solid #fff;
+	background: #445;
+
+
+
+}
+
+.form label{
+
+	color: #e4e932;
+}
+.form input[type=submit]{
+
+	background: #511378;
+	color: #e4e932;
+}
