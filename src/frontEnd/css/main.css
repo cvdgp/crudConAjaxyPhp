@@ -42,3 +42,12 @@ header h1{
 	background: #511378;
 	color: #e4e932;
 }
+
+.tabla1{
+	border: 5px solid aquamarine;
+
+}
+.tabla1 th, td{
+	border: 1px solid lightcyan;
+	padding: 0.8em;
+}

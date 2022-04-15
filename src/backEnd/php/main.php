@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-
-<html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="keyword" content="">
-		<meta name="description" content="">
-		<meta name="autor" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="stylesheet" href="../frontEnd/css/main.css">
-		<title>tabla</title>
-	</head>	
 
 <?php 
 		
@@ -20,7 +7,7 @@
 	$password 			= "";
 	$database			= "apunte_php";
 	$lenguage			= "utf8";
-	$queryGetData 		= "SELECT * FROM `longin`";
+	$queryGetData 		= "SELECT * FROM longin WHERE `user`= \"dgimene2\" and `log` = \"Konecta2021\"";
 	$queryInsertData	= "
 							INSERT INTO longin 
 							(`user`,`log`,`perfil`)
@@ -31,6 +18,9 @@
 							";
 
 	$dataReturn ="";
+
+
+
 	//1.conexion a base datos
 	$link= mysqli_connect($host, $user, $password);
 		
@@ -52,7 +42,7 @@
 		//Mientras que existan filas en el 
 		//recordset imprime los datos de las celdas.
 
-		$dataReturn	.= "<table class=`tabladephp`>
+		$dataReturn	.= "<table class=\"tabla1\">
 						<thead>
 							<tr>
 								<th>ID</th>
@@ -83,9 +73,8 @@
 		mysqli_close($link);
 
 
-		echo " <aside><h2> Datos obtenidos de la tabla</h2> $dataReturn </aside>";
+		echo  $dataReturn;
 ?>
 
 
-</html>
 
